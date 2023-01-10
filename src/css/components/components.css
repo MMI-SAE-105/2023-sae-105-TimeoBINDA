@@ -7,7 +7,7 @@
     font-size: 16px;
     transition-duration: 0.4s;
     margin-bottom: 5%;
-    
+    margin-top: 3%;
   }
 
 .main_button{
@@ -81,10 +81,8 @@ form{
   margin-bottom: 5%;
 }
 
-.methode{
-  margin-bottom: 1%;
-}
-
-.methode__pic{
-  margin-right: 3%;
+.map{
+  padding-top: 3%;
+  background-color: var(--blue--pastel);
+  margin-bottom: 5%;
 }

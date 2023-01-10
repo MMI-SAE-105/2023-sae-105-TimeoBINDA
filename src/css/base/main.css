@@ -8,12 +8,12 @@ body{
     color: var(--white);
   }
 
-p,h1,h2,h3{
+p,h1,h2,h3,.tarif{
   margin-inline: 5%;
   margin-top: 0;
 }
 
-p{
+p,.tarif{
   color: var(--black);
   font-size: var(--body-1);
 }
@@ -26,8 +26,17 @@ h1{
 .legende{
   text-align: center;
   font-style: italic;
+  margin-inline: 20%;
 }
 
 .underlink{
   text-decoration: underline;
+}
+
+.methode{
+  margin-bottom: 1%;
+}
+
+.methode__pic{
+  margin-right: 3%;
 }
