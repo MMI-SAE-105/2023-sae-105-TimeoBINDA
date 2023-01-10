@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url(base/main.css);
+@import url(base/media.css);
+@import url(utils/variables.css);
+
+@import url(layout/header.css);
+@import url(layout/footer.css);
+@import url(components/menu.css);
+@import url(components/components.css);

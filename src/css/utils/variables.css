@@ -1,0 +1,16 @@
+:root {
+/* Color styles */
+--dark--bg: rgba(13, 13, 13, 1);
+--white: rgba(255, 255, 255, 1);
+--black: rgba(0, 0, 0, 1);
+--blue--pastel: rgba(195, 240, 255, 1);
+--pastel-salmon: rgba(255, 210, 195, 1);
+
+/* Text-size styles */
+--heading-2: 22px;
+--body-1: 16px;
+--button: 24px;
+--body-2: 12px;
+--body-3: 8px;
+--heading-1: 50px;
+}
