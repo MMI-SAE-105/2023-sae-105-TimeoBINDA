@@ -1,57 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Contact</title>
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header>
-        <div class="header_element">
-          <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
-  
-          <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
-            <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
-          </button>
-          
-        </div>
-          <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul class="menu_link">
-              <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
-              <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
-              <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
-              <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
-              <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
-            </ul>
-            <div class="contact">
-              <div class="footer_contact_tel">
-              <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
-              <a href="tel:0001020304"> 00.01.02.03.04</a>
-              </div>
-              <div class="footer_contact_adress">
-                  <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
-                  <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
-              </div>
-              
-          </div>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
             
-          </nav>
-        </header>
+        </div>
+          
+        </nav>
+      </header>
   
         <main>
           <div class="couv">
               <img class="couv_img" src="../public/img/photo/other/main_couv_header.webp" alt="personnages film">
               <h2 class="couv__title">
-                  L'exposition
+                  Contact
               </h2>
           </div>
           <h1>
-              Le néo-impressionnisme 
+            Pour toute information, 
           </h1>
           <p>
-              Le néo-impressionnisme est un mouvement artistique qui a émergé en France dans les années 1880. Il a été fondé par un groupe de peintres qui incluait Georges Seurat et Paul Signac. 
+            Vous pouvez nous contacter 
           </p>
+          <p class="methode">
+            Par téléphone
+          </p>
+          <p class="underlink">
+            <img class="methode__pic" src="../public/img/icones/phone_black.svg" alt="phone">00.01.02.03.04
+          </p>
+
+          <p class="methode">
+            Par mail
+          </p>
+          <p class="underlink">
+            <img class="methode__pic" src="../public/img/icones/letter.svg" alt="phone">expo-luco@gmail.com
+          </p>
+
+          <form action="#">
+            <p>
+            Via ce formulaire:
+              </p>
+            <div>
+                <label class="label" for="first-name">Votre Nom</label>
+                <input class="input" type="text" name="first-name" id="first-name" required>
+            </div>
+            <div>
+                <label class="label" for="last-name">Votre Adresse Mail</label>
+                <input class="input" type="text" name="input" id="last-name" required>
+            </div>
+            <div>
+                <label class="label" for="message">Votre Message</label>
+                <textarea class="text_area" name="message" id="message" rows="10" required></textarea>
+            </div>
+
+            <div class="main_button">
+                <a href="#" class="button">ENVOYER</a>
+            </div>
+        </form>
+        
+        <p>
+            Vous pouvez aussi nous rencontrer sur place aux horaires d’ouvertures
+        </p>
+
         </main>
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>    
 </body>
 </html>
