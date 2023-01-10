@@ -18,6 +18,8 @@ footer{
   }
   .follow{
     color: var(--white);
+    margin: 0;
+    margin-top: 3%;
   }
   .footer_reseau_link{
     margin-top: 2%;
