@@ -1,6 +1,8 @@
 header{
     background-color: var(--dark--bg);
     text-decoration: none;
+    z-index: 2;
+    box-shadow: ;
   }
   
   .header_element{

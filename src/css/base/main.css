@@ -2,14 +2,19 @@ body{
     margin: 0;
     font-family: 'Heebo', sans-serif;
   }
-
+main{
+  margin-inline: 5%;
+}
   a{
     text-decoration: none;
     color: var(--white);
   }
 
 p{
-  color: var(--white);
+  color: var(--black);
   font-size: var(--body-1);
-  
+}
+
+h1{
+  font-size: var(--heading-2);
 }

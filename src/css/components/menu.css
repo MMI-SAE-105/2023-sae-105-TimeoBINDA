@@ -6,7 +6,6 @@
     height: 100vh;
     background: var(--dark--bg);
     display: grid;
-    
   }
 
 .menu_link{
@@ -39,3 +38,8 @@ li{
   .header_element_menuimg{
     scale: 2;
   }
+
+.contact{
+  margin-inline: 10%;
+  
+}
