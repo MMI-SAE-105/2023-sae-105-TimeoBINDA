@@ -3,5 +3,8 @@ iframe{
     height: auto;
     margin: 5%;
     border-radius: 10px;
-    
+}
+.video{
+    background-color: var(--blue--pastel);
+    padding-bottom: 1%;
 }
