@@ -1,0 +1,41 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 5%; 
+    padding-top:0 ;
+  }
+  
+  .footer_reseau{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer_reseau_logo{
+    width: 38px;
+    height: auto;
+    
+  }
+  
+  .footer_reseau_link{
+    margin-top: 2%;
+    margin-right: 8%;
+  }
+  
+  .footer_contact{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_contact_icones{
+    height: auto;
+    width: 24px;
+    margin-right: 5%;
+    
+  }
+  .footer_contact_adress,.footer_contact_tel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    font-size: var(--body-1);
+  }

@@ -1,3 +1,15 @@
 body{
     margin: 0;
+    font-family: 'Heebo', sans-serif;
   }
+
+  a{
+    text-decoration: none;
+    color: var(--white);
+  }
+
+p{
+  color: var(--white);
+  font-size: var(--body-1);
+  
+}

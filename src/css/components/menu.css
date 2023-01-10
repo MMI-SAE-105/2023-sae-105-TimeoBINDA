@@ -1,5 +1,3 @@
-
-
 .menu {
     position:fixed;
     top: 0;
@@ -8,12 +6,18 @@
     height: 100vh;
     background: var(--dark--bg);
     display: grid;
-    place-content: center;
+    
   }
 
-  .menu_link{
-    color: var(--white);
-  }
+.menu_link{
+  list-style: none;
+  margin-top: 20%;
+  font-size: var(--button);
+}
+
+li{
+  margin-bottom: 5%;
+}
   
   .header__menuBtn {
     margin-right: 5%;
