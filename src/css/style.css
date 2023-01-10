@@ -3,6 +3,7 @@
 @import url(base/main.css);
 @import url(base/media.css);
 @import url(utils/variables.css);
+@import url(components/caroussel.css);
 
 @import url(layout/header.css);
 @import url(layout/footer.css);
