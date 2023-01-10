@@ -1,19 +1,33 @@
+
+
 .menu {
     position:fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    background: var(--dark--bg);
     display: grid;
     place-content: center;
   }
   
   .header__menuBtn {
+    margin-right: 5%;
+    border: none;
     position: relative;
+    background: none;
     z-index: 10;
   }
 
   .noscroll,.noscroll body {
   overflow: hidden;
+  }
+
+  .header_element_logo{
+    margin-inline: 3%;
+    margin-bottom: 2%;
+  }
+
+  .header_element_menuimg{
+    scale: 2;
   }

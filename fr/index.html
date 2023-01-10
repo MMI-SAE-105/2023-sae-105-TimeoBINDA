@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>LuCo Exposition</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header>
-        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">menu</button>
-        <h1>Animal Lover</h1>
+      <div class="header_element">
+        <img class="header_element_logo" src="../public/img/icones/Logo.svg" alt="logo">
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
           <ul>
             <li><a href="cats/index.html">Les chats c'est cool</a></li>
