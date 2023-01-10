@@ -87,7 +87,7 @@
     border-radius: 0px 0px 10px 10px;
     border: 2px solid var(--black);
     margin-inline: 5%;
-    transform: translateY(-22%);
+    transform: translateY(-25%);
 }
 
 .card__img{
