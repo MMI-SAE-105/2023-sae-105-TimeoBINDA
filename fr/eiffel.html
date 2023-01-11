@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Eiffel</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/oeuvre/eiffel_tower.webp" alt="couv">
+        </div>
+        <h2 class="couv__oeuvre">
+            The Eiffel Tower
+        </h2>
+        <h1>
+            L'Oeuvre
+        </h1>
+        <p>
+            "La Tour Eiffel" est un tableau de Georges Seurat, peint en 1887-1888. Il est considéré comme l'un des chefs-d'œuvre de l'art pointilliste, une technique de peinture qui consiste à utiliser de petits points de couleur pour créer des illusions d'ombre et de lumière.
+
+
+        </p>
+
+        <p>
+            
+            Dans ce tableau, Seurat a utilisé des couleurs vives et des formes géométriques pour représenter la Tour Eiffel, qui était un symbole récent de la modernité et de la technologie à l'époque. Il a également utilisé des contrastes de couleur pour souligner les différentes parties de la tour, comme les arcs métalliques et les poutres, et pour créer des illusions d'ombre et de lumière sur la tour elle-même.
+            En arrière-plan, on voit des personnages en train de se promener sur les Champs de Mars et le Pont d'Iéna, donnant un aspect de vie et de mouvement à l'image.
+
+        </p>
+
+        <p>
+            En générale, l'œuvre de Seurat cherche à capturer la vie moderne de Paris dans une esthétique pointilliste et géométrique. Ce tableau est considéré comme une des icônes de l'art du XIXe siècle et une des illustrations les plus célèbres de la ville de Paris.
+        </p>
+
+
+        
+
+        <div class="oeuvre">
+            <h1>
+                The Eiffel Tower (1989) 
+            </h1>
+            <img class="oeuvre__img" src="../public/img/photo/oeuvre/eiffel_tower.webp" alt="self">
+        </div>
+
+        <div>
+            <figure>
+                <a href="seurat.html">
+                    <img class="oeuvre__img" src="../public/img/photo/artiste/seurat.webp" alt="signac">
+                </a>
+                <figcaption>
+                    <p class="legende">Seurat</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        
+        
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>  
+    </body>
+</html>
