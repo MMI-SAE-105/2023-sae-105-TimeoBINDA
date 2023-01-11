@@ -22,6 +22,12 @@ h1{
   font-size: var(--heading-2);
   margin-bottom: 0;
 }
+.couv__oeuvre{
+  text-align: center;
+  font-weight: lighter;
+  font-size: var(--heading-1);
+  margin: 0;
+}
 
 .legende{
   text-align: center;

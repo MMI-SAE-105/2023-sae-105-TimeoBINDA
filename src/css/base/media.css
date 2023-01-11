@@ -2,10 +2,23 @@ iframe{
     width: 90%;
     height: auto;
     margin: 5%;
+    border: none;
     border-radius: 10px;
 }
 .video{
     background-color: var(--blue--pastel);
     padding-bottom: 1%;
     margin-bottom: 4%;
+}
+
+.oeuvre{
+    background-color: var(--blue--pastel);
+    padding-top: 3%;
+}
+
+.oeuvre__img{
+    margin-left: 5%;
+    width: 90%;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
