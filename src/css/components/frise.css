@@ -47,16 +47,18 @@
     margin-left: 3%;
     width: 33%;
     height: auto;
+    
 }
 
 .body__main{
     font-size: var(--body-2);
     text-decoration: none;
+    color: black;
 }
 
 .body__sec{
     font-size: var(--body-3);
-    
+    color: black;
     display: flex;
     transform: translateX(-30%);
 }

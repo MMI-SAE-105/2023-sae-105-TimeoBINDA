@@ -84,13 +84,21 @@ Une des peintures néo-impressionnistes les plus célèbres de Van Gogh est "Le 
                     <button class="button__alpine"  @click="showImage1 = false">Oeuvre 2</button>
                 </div>
               
-                <img class="img__alpine" x-show="showImage1" src="../public/img/photo/oeuvre/starry_night.webp" alt="Image 1">
-                <img class="img__alpine" x-show="!showImage1" src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="Image 2">
+                <a href="starryNight.html" x-show="showImage1">
+                    <h3>The Starry Night</h3>
+                    <img class="img__alpine"  src="../public/img/photo/oeuvre/starry_night.webp" alt="Image 1">
+                    <p class="alpine__legende">1989</p>
+                </a>
+                <a href="vangoghself.html" x-show="!showImage1">
+                    <h3>Van Gogh Self</h3>
+                    <img class="img__alpine"  src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="Image 2">
+                    <p class="alpine__legende">1987</p>
+                </a>
               </div>
         </div>
 
         <div class="main_button">
-            <a href="pomme.html" class="button">En savoir plus</a>
+            <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" class="button">En savoir plus</a>
         </div>
 
         

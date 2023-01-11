@@ -8,7 +8,7 @@ body{
     color: var(--white);
   }
 
-p,h1,h2,h3,.tarif{
+p,h1,h2,.tarif{
   margin-inline: 5%;
   margin-top: 0;
 }
@@ -22,6 +22,14 @@ h1{
   font-size: var(--heading-2);
   margin-bottom: 0;
 }
+
+h3{
+  font-size: var(--heading-2);
+  margin: 0;
+  margin-inline: 10%;
+  color: var(--black);
+  margin-bottom: 2%;
+}
 .couv__oeuvre{
   text-align: center;
   font-weight: lighter;
@@ -33,6 +41,14 @@ h1{
   text-align: center;
   font-style: italic;
   margin-inline: 20%;
+}
+
+.alpine__legende{
+  text-align: center;
+  font-style: italic;
+  margin-inline: 20%;
+
+  transform: translateY(-50%);
 }
 
 .underlink{
