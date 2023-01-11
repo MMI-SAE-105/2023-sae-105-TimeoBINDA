@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Nuit étoilée</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/artiste/Van_gogh.webp" alt="peintre>
+        </div>
+        <h2 class="couv__oeuvre">
+            Van Gogh
+        </h2>
+        <h1>
+            L'Artiste
+        </h1>
+        <p>
+            Vincent Van Gogh est un artiste néerlandais connu pour ses peintures néo-impressionnistes, qui ont été influencées par les travaux de Georges Seurat et Paul Signac.  
+        </p>
+
+        <p>
+            Van Gogh a vécu au XIXe siècle et a produit la plupart de son œuvre durant la dernière décennie de sa vie. Sa peinture a été caractérisée par des couleurs vibrantes et des lignes fortes, qui reflètent sa passion pour la nature et la vie quotidienne.
+Une des peintures néo-impressionnistes les plus célèbres de Van Gogh est "Le Café de nuit", qui a été peint en 1888. Cette peinture montre un café animé dans un quartier de Montmartre à Paris, avec des personnages qui s'amusent et boivent de la bière. Van Gogh a utilisé une technique de pinceau unique pour créer un effet de lumière scintillante, qui donne à la scène une atmosphère joyeuse et festive.
+ 
+        </p>
+
+        <p>
+            Van Gogh a également peint des paysages de campagne, comme "Les Tournesols" et "Le Champ de blé aux corbeaux". Ces peintures montrent sa fascination pour les couleurs de la nature et sa capacité à capturer la beauté de la vie en dehors de la ville. 
+        </p>
+
+        <p>
+            Malgré son génie artistique, Van Gogh a eu du mal à trouver le succès de son vivant et a souffert de problèmes mentaux et financiers. Cependant, sa peinture a été redécouverte après sa mort et est maintenant considérée comme l'une des plus importantes de l'histoire de l'art. Ses peintures néo-impressionnistes ont été particulièrement influentes et ont inspiré de nombreux artistes à explorer de nouvelles techniques et à exprimer leur vision de la vie à travers leur art.
+        </p>
+
+        <h1>
+            Ses Œuvres à l’exposition  
+        </h1>
+        <p>
+            L’exposition LuCo à l’immense privilège de vous présenter ces 2 œuvres du grand maitre.   
+        </p>
+
+        <div class="oeuvre">
+            
+        </div>
+
+        <div class="main_button">
+            <a href="pomme.html" class="button">En savoir plus</a>
+        </div>
+
+        </main>
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>
