@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<html lang="en" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}"
+    :class="{noscroll:menuIsOpen" }>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +10,48 @@
     <title>LuCo Exposition</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
+
 <body>
     <header>
-      <div class="header_element">
-        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+        <div class="header_element">
+            <a class="header_element_logo" href="index.html"><img src="../public/img/icones/Logo.svg" alt="logo"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
-          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
-        </button>
-        
-      </div>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-          <ul class="menu_link">
-            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
-            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
-            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
-            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
-            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
-          </ul>
-          <div class="contact">
-            <div class="footer_contact_tel">
-            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
-            <a href="tel:0001020304"> 00.01.02.03.04</a>
-            </div>
-            <div class="footer_contact_adress">
-                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
-                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
-            </div>
-            
+            <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+                <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+            </button>
+
         </div>
-          
-        </nav>
-      </header>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul class="menu_link">
+                <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le
+                        néo-impressionisme</a></li>
+                <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les
+                        artistes </a></li>
+                <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les
+                        œuvres à découvrir</a></li>
+                <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a>
+                </li>
+                <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous
+                        contacter </a></li>
+            </ul>
+            <div class="contact">
+                <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                </div>
+                <div class="footer_contact_adress">
+                    <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                    <a
+                        href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151">
+                        Fondation Cartier, Bd Raspail, 75014 Paris </a>
+                </div>
 
-      <main>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
         <div class="couv">
             <img class="couv_img" src="../public/img/photo/other/main_couv_header.webp" alt="personnages film">
             <h2 class="couv__title">
@@ -49,250 +59,283 @@
             </h2>
         </div>
         <h1>
-            Le néo-impressionnisme 
+            Le néo-impressionnisme
         </h1>
         <p>
-            Le néo-impressionnisme est un mouvement artistique qui a émergé en France dans les années 1880. Il a été fondé par un groupe de peintres qui incluait Georges Seurat et Paul Signac. 
+            Le néo-impressionnisme est un mouvement artistique qui a émergé en France dans les années 1880. Il a été
+            fondé par un groupe de peintres qui incluait Georges Seurat et Paul Signac.
         </p>
         <p>
-            Le néo-impressionnisme se caractérise par l'utilisation de la division de la lumière, un procédé consistant à décomposer la lumière en une série de points de couleur pure qui sont appliqués sur la toile de manière à créer des effets de couleur et de lumière. Les néo-impressionnistes croyaient que cette technique permettait de créer des images plus précises et plus vibrantes. 
+            Le néo-impressionnisme se caractérise par l'utilisation de la division de la lumière, un procédé consistant
+            à décomposer la lumière en une série de points de couleur pure qui sont appliqués sur la toile de manière à
+            créer des effets de couleur et de lumière. Les néo-impressionnistes croyaient que cette technique permettait
+            de créer des images plus précises et plus vibrantes.
         </p>
         <p>
-            Le mouvement a été influencé par les idées de Charles Henry, un philosophe qui a soutenu que la perception de la couleur était subjective et pouvait être influencée par des facteurs tels que la luminosité et la proximité des couleurs.
+            Le mouvement a été influencé par les idées de Charles Henry, un philosophe qui a soutenu que la perception
+            de la couleur était subjective et pouvait être influencée par des facteurs tels que la luminosité et la
+            proximité des couleurs.
         </p>
 
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/L8pqls-dgO8" ></iframe>
-        
+            <iframe src="https://www.youtube.com/embed/L8pqls-dgO8"></iframe>
+
 
             <p class="legende">
-                Vidéo explicative du musée d’Orsay 
+                Vidéo explicative du musée d’Orsay
             </p>
         </div>
-        <h1 id="artistes" >
-          Artistes
+        <h1 id="artistes">
+            Artistes
         </h1>
         <p>
-            L’exposition LuCo vous fera découvrir de nombreux artistes comme par exemple  
+            L’exposition LuCo vous fera découvrir de nombreux artistes comme par exemple
         </p>
-        
+
         <div class="frise">
             <div class="frise__img">
                 <img src="../public/img/icones/frise.svg" alt="frise">
             </div>
             <div class="frise__allfiles">
-                <a href="pissarot.html"><div class="frise__file">
-                    <div class="file__handle">
-                        <p>
-                            <strong>1830</strong>
-                        </p>
-                    </div>
-                    <div class="file__body">
-                        <img class="body__pic" src="../public/img/photo/artiste/pissaro.webp" alt="">
-                        <div>
-                            <ul>
-                                <li class="body__main">Nom: Camille Pissarot </li>
-                                <li class="body__main">Mort: 1903</li>
-                                <li class="body__main">Oeuvres Populaires
-                                    <ul>
-                                        <li class="body__sec">Prairie avec vaches...(1891)</li>
-                                        <li class="body__sec">Young Peasant Having Her Coffee (1881)</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <a href="pissarot.html">
+                    <div class="frise__file">
+                        <div class="file__handle">
+                            <p>
+                                <strong>1830</strong>
+                            </p>
+                        </div>
+                        <div class="file__body">
+                            <img class="body__pic" src="../public/img/photo/artiste/pissaro.webp" alt="">
+                            <div>
+                                <ul>
+                                    <li class="body__main">Nom: Camille Pissarot </li>
+                                    <li class="body__main">Mort: 1903</li>
+                                    <li class="body__main">Oeuvres Populaires
+                                        <ul>
+                                            <li class="body__sec">Prairie avec vaches...(1891)</li>
+                                            <li class="body__sec">Young Peasant Having Her Coffee (1881)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div></a>
+                </a>
 
-                <a href="VanGogh.html"><div class="frise__file">
-                    <div class="file__handle">
-                        <p>
-                            <strong>1853</strong>
-                        </p>
-                    </div>
-                    <div class="file__body">
-                        <img class="body__pic" src="../public/img/photo/artiste/Van_gogh.webp" alt="">
-                        <div>
-                            <ul>
-                                <li class="body__main">Nom: Vincent Van Gogh </li>
-                                <li class="body__main">Mort: 1890</li>
-                                <li class="body__main">Oeuvres Populaires
-                                    <ul>
-                                        <li class="body__sec">La nuit étoilée (1889)</li>
-                                        <li class="body__sec">auto portrait 1887</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <a href="VanGogh.html">
+                    <div class="frise__file">
+                        <div class="file__handle">
+                            <p>
+                                <strong>1853</strong>
+                            </p>
+                        </div>
+                        <div class="file__body">
+                            <img class="body__pic" src="../public/img/photo/artiste/Van_gogh.webp" alt="">
+                            <div>
+                                <ul>
+                                    <li class="body__main">Nom: Vincent Van Gogh </li>
+                                    <li class="body__main">Mort: 1890</li>
+                                    <li class="body__main">Oeuvres Populaires
+                                        <ul>
+                                            <li class="body__sec">La nuit étoilée (1889)</li>
+                                            <li class="body__sec">auto portrait 1887</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div></a>
+                </a>
 
-                <a href="seurat.html"><div class="frise__file">
-                    <div class="file__handle">
-                        <p>
-                            <strong>1859</strong>
-                        </p>
-                    </div>
-                    <div class="file__body">
-                        <img class="body__pic" src="../public/img/photo/artiste/seurat.webp" alt="">
-                        <div>
-                            <ul>
-                                <li class="body__main">Nom: George Seurat </li>
-                                <li class="body__main">Mort: 1891</li>
-                                <li class="body__main">Oeuvres Populaires
-                                    <ul>
-                                        <li class="body__sec">A Sunday Afternoon on the Island of La Grande Jatte (1886)</li>
-                                        <li class="body__sec">The Eiffel Tower (1889) </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <a href="seurat.html">
+                    <div class="frise__file">
+                        <div class="file__handle">
+                            <p>
+                                <strong>1859</strong>
+                            </p>
+                        </div>
+                        <div class="file__body">
+                            <img class="body__pic" src="../public/img/photo/artiste/seurat.webp" alt="">
+                            <div>
+                                <ul>
+                                    <li class="body__main">Nom: George Seurat </li>
+                                    <li class="body__main">Mort: 1891</li>
+                                    <li class="body__main">Oeuvres Populaires
+                                        <ul>
+                                            <li class="body__sec">A Sunday Afternoon on the Island of La Grande Jatte
+                                                (1886)</li>
+                                            <li class="body__sec">The Eiffel Tower (1889) </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div></a>
+                </a>
 
-                <a href="signac.html"><div class="frise__file">
-                    <div class="file__handle">
-                        <p>
-                            <strong>1863</strong>
-                        </p>
-                    </div>
-                    <div class="file__body">
-                        <img class="body__pic" src="../public/img/photo/artiste/signac.webp" alt="">
-                        <div>
-                            <ul>
-                                <li class="body__main">Nom: Paul Signac</li>
-                                <li class="body__main">Mort: 1935</li>
-                                <li class="body__main">Oeuvres Populaires
-                                    <ul>
-                                        <li class="body__sec">Women at the Well (1892)</li>
-                                        <li class="body__sec">sunday (1890)</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <a href="signac.html">
+                    <div class="frise__file">
+                        <div class="file__handle">
+                            <p>
+                                <strong>1863</strong>
+                            </p>
+                        </div>
+                        <div class="file__body">
+                            <img class="body__pic" src="../public/img/photo/artiste/signac.webp" alt="">
+                            <div>
+                                <ul>
+                                    <li class="body__main">Nom: Paul Signac</li>
+                                    <li class="body__main">Mort: 1935</li>
+                                    <li class="body__main">Oeuvres Populaires
+                                        <ul>
+                                            <li class="body__sec">Women at the Well (1892)</li>
+                                            <li class="body__sec">sunday (1890)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div></a>
+                </a>
 
 
             </div>
         </div>
 
         <h1 id="oeuvres">
-          Oeuvres
+            Oeuvres
         </h1>
         <p>
-            Découvrez-ci dessous des œuvres présentes à notre exposition  
+            Découvrez-ci dessous des œuvres présentes à notre exposition
         </p>
         <div class="carrousel" x-data="{}">
-            
 
-                <div class="carrousel_parent-ecrans" x-ref="parent">
-                    
-                    <div id="ecran-1" class="carrousel_ecran">
-                        <figure>
-                            <a href="grandeJatte.html"><img class="card__img" src="../public/img/photo/oeuvre/A_Sunday_on_La_Grande_Jatte.webp" alt="image ecran 1"></a>
-                            <figcaption class="card__title__car" >A Sunday on La Grande Jatte</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-2" class="carrousel_ecran">
-                        <figure>
-                            <a href="eiffel.html"><img class="card__img" src="../public/img/photo/oeuvre/eiffel_tower.webp" alt="image ecran 2"></a>
-                            <figcaption class="card__title__car" >Eiffel Tower</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-3" class="carrousel_ecran">
-                        <figure>
-                            <a href="prairie.html"><img class="card__img" src="../public/img/photo/oeuvre/prairie_avec_vache.webp" alt="image ecran 3"></a>
-                            <figcaption class="card__title__car" >Prairie avec vaches</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-4" class="carrousel_ecran">
-                        <figure>
-                            <a href="starryNight.html"><img class="card__img" src="../public/img/photo/oeuvre/starry_night.webp" alt="image ecran 4"></a>
-                            <figcaption class="card__title__car" >Starry Night</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-5" class="carrousel_ecran">
-                        <figure>
-                            <a href="sunday.html"><img class="card__img" src="../public/img/photo/oeuvre/sunday.webp" alt="image ecran 5"></a>
-                            <figcaption class="card__title__car">Sunday</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-6" class="carrousel_ecran">
-                        <figure>
-                            <a href="vangoghself.html"><img class="card__img" src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="image ecran 6"></a>
-                            <figcaption class="card__title__car" > Self</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-7" class="carrousel_ecran">
-                        <figure>
-                            <a href="womenatthewell.html"><img class="card__img" src="../public/img/photo/oeuvre/women_at_the_well.webp" alt="image ecran 7"></a>
-                            <figcaption class="card__title__car" >Women at the Well</figcaption>
-                        </figure>
-                    </div>
-                    <div id="ecran-8" class="carrousel_ecran">
-                        <figure>
-                            <a href="youngpeasant.html"><img class="card__img" src="../public/img/photo/oeuvre/young_peasant_having_her_coffee.webp" alt="image ecran 8"></a>
-                            <figcaption class="card__title__car" >young peasant having her coffee</figcaption>
-                        </figure>
-                    </div>
+
+            <div class="carrousel_parent-ecrans" x-ref="parent">
+
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <a href="grandeJatte.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/A_Sunday_on_La_Grande_Jatte.webp"
+                                alt="image ecran 1"></a>
+                        <figcaption class="card__title__car">A Sunday on La Grande Jatte</figcaption>
+                    </figure>
                 </div>
-                
-                
-                    
-                
-
-                <div class="car__button">
-                    <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-                    <img src="../public/img/icones/arrow_circled_left.svg" alt="fleche gauche">
-                    </button>
-            
-                    <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> 
-                    <img src="../public/img/icones/arrow_circled_right.svg" alt="fleche droite">
-                    </button>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <a href="eiffel.html"><img class="card__img" src="../public/img/photo/oeuvre/eiffel_tower.webp"
+                                alt="image ecran 2"></a>
+                        <figcaption class="card__title__car">Eiffel Tower</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <a href="prairie.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/prairie_avec_vache.webp" alt="image ecran 3"></a>
+                        <figcaption class="card__title__car">Prairie avec vaches</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <a href="starryNight.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/starry_night.webp" alt="image ecran 4"></a>
+                        <figcaption class="card__title__car">Starry Night</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <a href="sunday.html"><img class="card__img" src="../public/img/photo/oeuvre/sunday.webp"
+                                alt="image ecran 5"></a>
+                        <figcaption class="card__title__car">Sunday</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <a href="vangoghself.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="image ecran 6"></a>
+                        <figcaption class="card__title__car"> Self</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <a href="womenatthewell.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/women_at_the_well.webp" alt="image ecran 7"></a>
+                        <figcaption class="card__title__car">Women at the Well</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <a href="youngpeasant.html"><img class="card__img"
+                                src="../public/img/photo/oeuvre/young_peasant_having_her_coffee.webp"
+                                alt="image ecran 8"></a>
+                        <figcaption class="card__title__car">young peasant having her coffee</figcaption>
+                    </figure>
                 </div>
             </div>
-        
+
+
+
+
+
+            <div class="car__button">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+                    <img src="../public/img/icones/arrow_circled_left.svg" alt="fleche gauche">
+                </button>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">
+                    <img src="../public/img/icones/arrow_circled_right.svg" alt="fleche droite">
+                </button>
+            </div>
+        </div>
+
 
         <p>
-            Si l’exposition vous intéresse, vous pouvez réserver vos billets via ce lien.  
+            Si l’exposition vous intéresse, vous pouvez réserver vos billets via ce lien.
         </p>
 
         <div class="main_button">
             <a href="https://fondation-cartier.tickeasy.com/fr-FR/exposition" class="button">Je Réserve</a>
         </div>
 
-      </main>
-    
+    </main>
+
 
     <footer>
-      <div class="footer_left">
-          <p class="follow">
-              Nous suivre
-          </p>
-          <div class="footer_reseau">
-              <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
-              <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
-              <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
-          </div>
+        <div class="footer_left">
+            <p class="follow">
+                Nous suivre
+            </p>
+            <div class="footer_reseau">
+                <a class="footer_reseau_link" href=""><img class="footer_reseau_logo"
+                        src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                <a class="footer_reseau_link" href=""><img class="footer_reseau_logo"
+                        src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                <a class="footer_reseau_link" href=""><img class="footer_reseau_logo"
+                        src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+            </div>
 
-          <div class="footer_contact">
-              <div class="footer_contact_tel">
-              <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
-              <a href="tel:0001020304"> 00.01.02.03.04</a>
-              </div>
-              <div class="footer_contact_adress">
-                  <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
-                  <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
-              </div>
-              
-          </div>
-          
-      </div>
+            <div class="footer_contact">
+                <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                </div>
+                <div class="footer_contact_adress">
+                    <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                    <a
+                        href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151">
+                        Fondation Cartier, Bd Raspail, 75014 Paris </a>
+                </div>
 
-      <div class="footer_logo">
-          <img src="../public/img/icones/Logo.svg" alt="Logo">
-      </div>
-  </footer>    
+            </div>
+
+        </div>
+
+        <div class="footer_logo">
+            <img src="../public/img/icones/Logo.svg" alt="Logo">
+        </div>
+    </footer>
 </body>
+
 </html>
