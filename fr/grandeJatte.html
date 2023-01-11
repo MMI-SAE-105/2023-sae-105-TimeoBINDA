@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Grande Jatte</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/oeuvre/A_Sunday_on_La_Grande_Jatte.webp" alt="couv">
+        </div>
+        <h2 class="couv__oeuvre">
+            Grande Jatte
+        </h2>
+        <h1>
+            L'Oeuvre
+        </h1>
+        <p>
+            Ce tableau a été peint à une époque où l'urbanisation de Paris était en plein essor, et où de nombreux artistes étaient inspirés par les scènes de vie urbaine. Seurat a décidé de peindre une scène de dimanche après-midi sur l'île de la Grande Jatte, une île située dans la Seine, près de Paris, qui était un lieu de promenade populaire pour les Parisiens de la fin du 19ème siècle. Il a passé plusieurs mois à dessiner et à peindre sur place, pour capturer les détails de la scène avec précision.
+
+
+        </p>
+
+        <p>
+            
+            Seurat a utilisé la technique de la peinture à l'huile pour réaliser ce tableau, qui mesure 81x120 cm. Il a développé une méthode de peinture basée sur la division de la lumière en points colorés, appelée pointillisme, pour créer des effets de lumière et de couleur. Il a utilisé des couleurs vives et saturées, qui sont disposées de manière à créer des effets de contrastes et de mouvement. La composition de la peinture est basée sur des lignes horizontales et verticales, qui créent une sensation de profondeur et de mouvement.
+
+
+        </p>
+
+
+        
+
+        <div class="oeuvre">
+            <h1>
+                A sunday afternoon on the island of la grande jatte(1886) 
+            </h1>
+            <img class="oeuvre__img" src="../public/img/photo/oeuvre/A_Sunday_on_La_Grande_Jatte.webp" alt="self">
+        </div>
+
+        <div>
+            <figure>
+                <a href="seurat.html">
+                    <img class="oeuvre__img" src="../public/img/photo/artiste/seurat.webp" alt="signac">
+                </a>
+                <figcaption>
+                    <p class="legende">Seurat</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        
+        <div class="main_button">
+            <a href="https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte#:~:text=Edit-,A%20Sunday%20Afternoon%20on%20the%20Island%20of%20La%20Grande%20Jatte,of%20the%20neo%2Dimpressionist%20movement" class="button">Plus sur l'oeuvre</a>
+        </div>
+        </main>
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>  
+    </body>
+</html>

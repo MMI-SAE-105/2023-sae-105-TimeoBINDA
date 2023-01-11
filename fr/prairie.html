@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Prairie</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/oeuvre/prairie_avec_vache.webp" alt="couv">
+        </div>
+        <h2 class="couv__oeuvre">
+            Prairie avec vaches, brume, soleil couchant à Éragny
+        </h2>
+        <h1>
+            L'Oeuvre
+        </h1>
+        <p>
+            La peinture de Prairie avec vaches, brume, soleil couchant à Éragny a été réalisée durant une période où Signac était particulièrement intéressé par les scènes de campagne et les moments de transition entre le jour et la nuit. Il a passé de nombreux mois à peindre dans sa propriété à Éragny, où il a étudié et peint les paysages, les animaux et les atmosphères locales. Il a été particulièrement inspiré par les moments de crépuscule, où les lumières et les couleurs changent rapidement, il a souhaité capturer cette ambiance de transition entre jour et nuit.
+
+
+        </p>
+
+        <p>
+            Signac a utilisé la technique de la peinture à l'huile pour réaliser ce tableau. Il a utilisé des couleurs vives et saturées, qui sont disposées de manière à créer des effets de contrastes et de mouvement. Il a utilisé la technique de pointillisme pour créer des effets de lumière et de couleur. Il a pris soin de choisir les couleurs pour créer une harmonie sur la composition, notamment en utilisant des teintes chaudes pour le coucher de soleil, et des teintes plus froides pour la brume. La composition de la peinture est basée sur des lignes horizontales et verticales, qui créent une sensation de profondeur et de mouvement. Les vaches sont disposées de manière à créer une dynamique, elles sont représentées en train de paître dans une prairie, avec une atmosphère de calme et de repos.
+
+
+        </p>
+
+        <p>
+            Prairie avec vaches, brume, soleil couchant à Éragny est considérée comme une œuvre importante de Signac, car elle capture la vie rurale de manière réaliste etpoétique. Cette peinture montre l'intérêt de l'artiste pour les moments de transition entre le jour et la nuit, ainsi que pour les scènes de campagne. Il a réussi à saisir la luminosité et la douceur de cette scène, mettant en valeur les éléments naturels comme les vaches paissant, le ciel brumeux et le coucher de soleil. Cette œuvre est également un exemple de la technique de pointillisme de Signac, qui utilise des petits points de couleurs pour créer des effets de lumière et de couleur, il permet de créer des effets optiques, la brume par exemple, qui donne une atmosphère particulière à la scène.
+ 
+        </p>
+
+        <div class="oeuvre">
+            <h1>
+                Prairie avec vaches, brume, soleil couchant à Éragny (1891) 
+            </h1>
+            <img class="oeuvre__img" src="../public/img/photo/oeuvre/prairie_avec_vache.webp" alt="self">
+        </div>
+
+        <div>
+            <figure>
+                <a href="pissarot.html">
+                    <img class="oeuvre__img" src="../public/img/photo/artiste/pissaro.webp" alt="">
+                </a>
+                <figcaption>
+                    <p class="legende">Pissarot</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        
+        <div class="main_button">
+            <a href="https://www.sothebys.com/en/auctions/ecatalogue/2018/impressionist-modern-art-evening-sale-n09930/lot.13.html" class="button">Plus sur l'oeuvre</a>
+        </div>
+        </main>
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>  
+    </body>
+</html>

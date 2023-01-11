@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Van Gogh Self</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="couv">
+        </div>
+        <h2 class="couv__oeuvre">
+            Van Gogh Self
+        </h2>
+        <h1>
+            L'Oeuvre
+        </h1>
+        <p>
+            Au cours de sa période à Arles, Van Gogh a réalisé un grand nombre d'autoportraits, ce qui montre son intérêt pour la représentation de soi. Il a choisi de peindre son propre portrait pour explorer ses propres émotions et pour exprimer sa vision de lui-même. L'autoportrait de 1887 est l'un des nombreux qu'il a réalisé pendant cette période et il en a peint plus de 40 au cours de sa vie.
+
+        </p>
+
+        <p>
+            Van Gogh a utilisé la technique de la peinture à l'huile sur toile pour réaliser cet autoportrait. Il a choisi de peindre sur un fond blanc, qui attire immédiatement l'attention sur son visage. Il a utilisé des couleurs vives et saturées pour représenter ses propres traits, notamment le bleu, le rouge et le jaune. La composition est axée sur le visage de l'artiste, qui est placé au centre de la toile, avec les yeux ouverts et fixes, donnant un regard direct et intense.
+
+        </p>
+
+        <p>
+            Cet autoportrait est considéré comme l'un des portraits les plus intimes de Van Gogh, car il a réussi à capturer ses propres émotions et à les transmettre à travers la peinture. Il a réussi à transmettre une sensation de solitude, d'introspection et de vulnérabilité à travers cette œuvre. Cette peinture a eu une influence considérable sur les artistes qui ont suivi, notamment en termes de peinture d'autoportrait. Il montre également les talents de Van Gogh pour utiliser les couleurs vives et saturées pour créer une expression émotionnelle dans son travail.
+ 
+        </p>
+
+        <div class="oeuvre">
+            <h1>
+                Self (1987) 
+            </h1>
+            <img class="oeuvre__img" src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="self">
+        </div>
+
+        <div>
+            <figure>
+                <a href="VanGogh.html">
+                    <img class="oeuvre__img" src="../public/img/photo/artiste/Van_gogh.webp" alt="">
+                </a>
+                <figcaption>
+                    <p class="legende">Van Gogh</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        
+        <div class="main_button">
+            <a href="https://en.wikipedia.org/wiki/Van_Gogh_self-portrait_(1889)" class="button">Plus sur l'oeuvre</a>
+        </div>
+        </main>
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>  
+    </body>
+</html>
