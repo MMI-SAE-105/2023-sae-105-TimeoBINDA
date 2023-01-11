@@ -3,7 +3,7 @@
 - PRÉNOM : Timéo
 - URL du site : https://luco-exposition.timeobinda.fr/
 - URL FIGMA : https://www.figma.com/file/dmhylO1VhwdiF5Q7S8E2af/SAE_105_BINDA?node-id=1229%3A1389&t=qWQrDHKdE31ss5SQ-1
-- URL Lighthouse : https://luco-exposition.timebinda.fr/reports/index.html
+- URL Lighthouse : https://luco-exposition.timeobinda.fr//reports/index.html
 
 # Structure de départ pour la SAE 105.
 
