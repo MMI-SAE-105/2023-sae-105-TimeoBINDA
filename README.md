@@ -1,8 +1,8 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9704307&assignment_repo_type=AssignmentRepo)
 - NOM : BINDA
 - PRÉNOM : Timéo
-- URL du site :
-- URL FIGMA :
+- URL du site : https://luco-exposition.timeobinda.fr/
+- URL FIGMA : https://www.figma.com/file/dmhylO1VhwdiF5Q7S8E2af/SAE_105_BINDA?node-id=1229%3A1389&t=qWQrDHKdE31ss5SQ-1
 
 # Structure de départ pour la SAE 105.
 
