@@ -54,6 +54,14 @@
     border: 2px solid black;
   }
 
+.lang__button{
+  display: flex;
+  margin-inline: 10%;
+  justify-content: space-between;
+}
+
+
+
 .couv{
   z-index: 1;
   position: relative;

@@ -66,3 +66,9 @@ h3{
 blockquote{
   text-align: center;
 }
+
+.lang__title{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10%;
+}
