@@ -43,7 +43,7 @@
 
       <main>
         <div class="couv">
-            <img class="couv_img" src="../public/img/photo/artiste/Van_gogh.webp" alt="peintre>
+            <img class="couv_img" src="../public/img/photo/artiste/Van_gogh.webp" alt="peintre">
         </div>
         <h2 class="couv__oeuvre">
             Van Gogh
@@ -77,12 +77,23 @@ Une des peintures néo-impressionnistes les plus célèbres de Van Gogh est "Le 
         </p>
 
         <div class="oeuvre">
-            
+            <div x-data="{ showImage1: true }">
+                
+                <div class="buttons__alpine">
+                    <button class="button__alpine"  @click="showImage1 = true">Oeuvre 1</button>
+                    <button class="button__alpine"  @click="showImage1 = false">Oeuvre 2</button>
+                </div>
+              
+                <img class="img__alpine" x-show="showImage1" src="../public/img/photo/oeuvre/starry_night.webp" alt="Image 1">
+                <img class="img__alpine" x-show="!showImage1" src="../public/img/photo/oeuvre/van_gogh_self.webp" alt="Image 2">
+              </div>
         </div>
 
         <div class="main_button">
             <a href="pomme.html" class="button">En savoir plus</a>
         </div>
+
+        
 
         </main>
 

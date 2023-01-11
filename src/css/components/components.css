@@ -10,6 +10,33 @@
     margin-top: 3%;
   }
 
+
+.buttons__alpine{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20%;
+}
+
+.button__alpine{
+  display: inline-block;
+  background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    
+}
+
+
+.img__alpine{
+  width: 80%;
+  margin-inline: 10%;
+  padding-bottom: 5%;
+}
 .main_button{
     display: flex;
     flex-direction: column;
