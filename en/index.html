@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>LuCo Exposition</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+          <img class="couv_img" src="../public/img/photo/other/main_couv_header.webp" alt="personnages film">
+          <h2 class="couv__title">
+              Anglais
+          </h2>
+        </div>
+        <h1>
+          Ceci est la home page Anglaise
+        </h1>
+        <p>
+          Bienvenue à l'exposition Luco, consacrée au mouvement artistique fascinant qu'est le néo-impressionnisme. Cette exposition met en lumière les œuvres de grands peintres tels que Georges Seurat, Paul Signac et Camille Pissarro, qui ont utilisé la technique de la division de la lumière pour créer des images vibrantes et précises. Vous découvrirez comment ces artistes ont exploré les effets de couleur et de lumière pour capturer la beauté de la vie quotidienne et des paysages. Nous sommes ravis de vous accueillir et espérons que cette exposition vous offrira une expérience artistique inoubliable.
+        </p>
+
+        <div class="main_button">
+          <a href="expo.html" class="button">En savoir plus</a>
+          <a href="#" class="button">Je Réserve</a>
+        </div>
+      </main>
+    
+
+    <footer>
+      <div class="footer_left">
+          <p class="follow">
+              Nous suivre
+          </p>
+          <div class="footer_reseau">
+              <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+              <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+              <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+          </div>
+
+          <div class="footer_contact">
+              <div class="footer_contact_tel">
+              <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+              <a href="tel:0001020304"> 00.01.02.03.04</a>
+              </div>
+              <div class="footer_contact_adress">
+                  <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                  <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+              </div>
+              
+          </div>
+          
+      </div>
+
+      <div class="footer_logo">
+          <img src="../public/img/icones/Logo.svg" alt="Logo">
+      </div>
+  </footer>    
+</body>
+</html>
