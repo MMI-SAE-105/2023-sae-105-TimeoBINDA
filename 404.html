@@ -25,6 +25,13 @@
         <li><a href="fr/contact.html"></a>Contact</li>
         <li><a href="fr/info.html"></a>Info</li>
     </ul>
+    <form action="https://google.com/" method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit="q = q + ' site:dada.lisa-cingolani.fr'">
+    <label for="q">Que cherchez-vous ?</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button type="submit">Rechercher</button>
+    </form>
     
 
     
