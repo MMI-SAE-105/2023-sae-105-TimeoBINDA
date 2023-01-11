@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Seurat</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+      <div class="header_element">
+        <a class="header_element_logo" href="index.html"><img  src="../public/img/icones/Logo.svg" alt="logo"></a>
+
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header__menuBtn">
+          <img class="header_element_menuimg" src="../public/img/icones/menu_button.svg" alt="">
+        </button>
+        
+      </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul class="menu_link">
+            <li><a href="expo.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Le néo-impressionisme</a></li>
+            <li><a href="expo.html#artistes"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les artistes </a></li>
+            <li><a href="expo.html#oeuvres"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Les œuvres à découvrir</a></li>
+            <li><a href="info.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Infos </a></li>
+            <li><a href="contact.html"> <img src="../public/img/icones/menu_arrow_right.svg" alt="fleche"> Nous contacter </a></li>
+          </ul>
+          <div class="contact">
+            <div class="footer_contact_tel">
+            <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+            <a href="tel:0001020304"> 00.01.02.03.04</a>
+            </div>
+            <div class="footer_contact_adress">
+                <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+            </div>
+            
+        </div>
+          
+        </nav>
+      </header>
+
+      <main>
+        <div class="couv">
+            <img class="couv_img" src="../public/img/photo/artiste/seurat.webp" alt="peintre">
+        </div>
+        <h2 class="couv__oeuvre">
+            George Seurat
+        </h2>
+        <h1>
+            L'Artiste
+        </h1>
+        <p>
+            George Seurat était un peintre français connu pour son travail en tant que pionnier de l'impressionnisme néo-impressionniste. Sa célèbre peinture "Un dimanche après-midi à l'Île de la Grande Jatte" est devenue une icône de l'art moderne.
+
+        </p>
+
+        <p>
+            Seurat a été influencé par les théories scientifiques de son époque, en particulier celles de Charles Henry sur la perception des couleurs. Il a utilisé ces théories pour développer sa propre technique de peinture, connue sous le nom de pointillisme, dans laquelle il utilisait de petites taches de couleur pure pour créer des formes et des couleurs lorsque la peinture était vue de loin.
+
+ 
+        </p>
+
+        <p>
+            L'un des objectifs de Seurat était de créer des peintures qui étaient plus précises et plus réalistes que celles de l'impressionnisme traditionnel. Il croyait que l'utilisation de petites taches de couleur pure permettrait de créer des couleurs plus précises et de donner une sensation de mouvement et de profondeur à ses peintures.
+
+        </p>
+
+        <p>
+            En plus de son travail en tant que peintre, Seurat était également un théoricien de l'art et a écrit de nombreux essais sur l'art et la couleur. Sa théorie de la couleur, connue sous le nom de chromo-théorie, a été largement utilisée par les artistes de son époque et a influencé de nombreux artistes modernes.
+
+        </p>
+
+        <h1>
+            Ses Œuvres à l’exposition  
+        </h1>
+        <p>
+            L’exposition LuCo à l’immense privilège de vous présenter ces 2 œuvres du grand maitre.   
+        </p>
+
+        <div class="oeuvre">
+            <div x-data="{ showImage1: true }">
+                
+                <div class="buttons__alpine">
+                    <button class="button__alpine"  @click="showImage1 = true">Oeuvre 1</button>
+                    <button class="button__alpine"  @click="showImage1 = false">Oeuvre 2</button>
+                </div>
+              
+                <a href="grandeJatte.html" x-show="showImage1">
+                    <h3>La Grande Jatte</h3>
+                    <img class="img__alpine"  src="../public/img/photo/oeuvre/A_Sunday_on_La_Grande_Jatte.webp" alt="Image 1">
+                    <p class="alpine__legende">1886</p>
+                </a>
+                <a href="eiffel.html" x-show="!showImage1">
+                    <h3>The Eiffel Tower</h3>
+                    <img class="img__alpine"  src="../public/img/photo/oeuvre/eiffel_tower.webp" alt="Image 2">
+                    <p class="alpine__legende">1889</p>
+                </a>
+              </div>
+        </div>
+
+        <div class="main_button">
+            <a href="https://en.wikipedia.org/wiki/Georges_Seurat" class="button">En savoir plus</a>
+        </div>
+
+        
+
+        </main>
+
+        <footer>
+            <div class="footer_left">
+                <p class="follow">
+                    Nous suivre
+                </p>
+                <div class="footer_reseau">
+                    <a class="footer_reseau_link"  href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/insta.webp" alt="insta"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/linkedin.webp" alt="linkedin"></a>
+                    <a class="footer_reseau_link" href=""><img class="footer_reseau_logo" src="../public/img/photo/reseaux/twitter.webp" alt="twitter"></a>
+                </div>
+      
+                <div class="footer_contact">
+                    <div class="footer_contact_tel">
+                    <img class="footer_contact_icones" src="../public/img/icones/phone_white.svg" alt="phone">
+                    <a href="tel:0001020304"> 00.01.02.03.04</a>
+                    </div>
+                    <div class="footer_contact_adress">
+                        <img class="footer_contact_icones" src="../public/img/icones/pin.svg" alt="pin">
+                        <a href="https://www.google.com/maps/place/Cartier+Foundation+for+Contemporary+Art/@48.8433713,2.2903936,13.1z/data=!4m5!3m4!1s0x47e671c80c12b47d:0x225ddbf564cf5d5a!8m2!3d48.8372917!4d2.3319151"> Fondation Cartier,  Bd Raspail, 75014 Paris </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+      
+            <div class="footer_logo">
+                <img src="../public/img/icones/Logo.svg" alt="Logo">
+            </div>
+        </footer>
