@@ -90,6 +90,7 @@
     margin-inline: 5%;
     transform: translateY(-25%);
     padding-top: 3%;
+    border-top-style : none
 }
 
 .card__img{
